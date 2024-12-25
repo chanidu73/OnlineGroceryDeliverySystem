@@ -1,0 +1,291 @@
+{
+    "GlobalConfiguration":{
+        "BaseUrl":"http://localhost:5073"
+    },
+    "Routes":[
+        {
+        "UpstreamPathTemplate":" ",
+        "UpstreamHttpMethod":["GET"],
+        "DownstreamPathTemplate": "/api/Delivery",
+        "DownstreamScheme": "http",
+        "DownstreamHostAndPorts": [
+            {
+                "Host": "localhost",
+                "Port": 5073
+            }
+        ]
+        },
+
+        {
+            "UpstreamPathTemplate":"/gateaway/Delivery/{id}",
+            "UpstreamHttpMethod":["GET"],
+            "DownstreamPathTemplate": "/api/Delivery/{id}",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 5100
+                }
+            ]
+        },
+
+        {
+            "UpstreamPathTemplate":"/gateaway/Delivery",
+            "UpstreamHttpMethod":["POST"],
+            "DownstreamPathTemplate": "/api/Delivery",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 5100
+                }
+            ]
+        },
+
+        {
+            "UpstreamPathTemplate":"/gateaway/Delivery/{id}",
+            "UpstreamHttpMethod":["PUT"],
+            "DownstreamPathTemplate": "/api/Delivery/{id}",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 5100
+                }
+            ]
+        },
+        {
+            "UpstreamPathTemplate":"/gateaway/Delivery/{id}",
+            "UpstreamHttpMethod":["DELETE"],
+            "DownstreamPathTemplate": "/api/Delivery/{id}",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 5100
+                }
+            ]
+        },
+
+        {
+            "UpstreamPathTemplate":"/gateaway/Inventory",
+            "UpstreamHttpMethod":["GET"],
+            "DownstreamPathTemplate": "/api/Inventory",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 5148
+                }
+            ]
+        },
+
+        {
+            "UpstreamPathTemplate":"/gateaway/Inventory/{id}",
+            "UpstreamHttpMethod":["GET"],
+            "DownstreamPathTemplate": "/api/Inventory/{id}",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 5148
+                }
+            ]
+        },
+
+        {
+            "UpstreamPathTemplate":"/gateaway/Inventory/{id}",
+            "UpstreamHttpMethod":["PUT"],
+            "DownstreamPathTemplate": "/api/Inventory/{id}",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 5148
+                }
+            ]
+        },
+
+        {
+            "UpstreamPathTemplate":"/gateaway/Inventory/{id}",
+            "UpstreamHttpMethod":["DELETE"],
+            "DownstreamPathTemplate": "/api/Inventory/{id}",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 5148
+                }
+            ]
+        },
+
+        {
+            "UpstreamPathTemplate":"/gateaway/Inventory",
+            "UpstreamHttpMethod":["POST"],
+            "DownstreamPathTemplate": "/api/Inventory",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 5148
+                }
+            ]
+        },
+
+        {
+            "UpstreamPathTemplate":"/gateaway/Inventory/adjustment",
+            "UpstreamHttpMethod":["GET"],
+            "DownstreamPathTemplate": "/api/Inventory/adjustment",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 5148
+                }
+            ]
+        },
+
+        {
+            "UpstreamPathTemplate":"/gateaway/Inventory/adjustment",
+            "UpstreamHttpMethod":["POST"],
+            "DownstreamPathTemplate": "/api/Inventory/adjustment",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 5148
+                }
+            ]
+        },
+
+        {
+            "UpstreamPathTemplate":"/gateaway/Order",
+            "UpstreamHttpMethod":["GET"],
+            "DownstreamPathTemplate": "/api/Order",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 5125
+                }
+            ]
+        },
+
+        {
+            "UpstreamPathTemplate":"/gateaway/Order",
+            "UpstreamHttpMethod":["POST"],
+            "DownstreamPathTemplate": "/api/Order",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 5125
+                }
+            ]
+        },
+
+        {
+            "UpstreamPathTemplate":"/gateaway/Order/{id}",
+            "UpstreamHttpMethod":["GET"],
+            "DownstreamPathTemplate": "/api/Order/{id}",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 5125
+                }
+            ]
+        },
+
+        {
+            "UpstreamPathTemplate":"/gateaway/Order/{id}",
+            "UpstreamHttpMethod":["PUT"],
+            "DownstreamPathTemplate": "/api/Order/{id}",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 5125
+                }
+            ]
+        },
+        {
+            "UpstreamPathTemplate":"/gateaway/Order/{id}",
+            "UpstreamHttpMethod":["DELETE"],
+            "DownstreamPathTemplate": "/api/Order/{id}",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 5125
+                }
+            ]
+        },
+
+        {
+            "UpstreamPathTemplate":"/gateaway/Product",
+            "UpstreamHttpMethod":["GET"],
+            "DownstreamPathTemplate": "/api/Product",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 5210
+                }
+            ]
+        },
+
+        {
+            "UpstreamPathTemplate":"/gateaway/Product",
+            "UpstreamHttpMethod":["POST"],
+            "DownstreamPathTemplate": "/api/Product",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 5210
+                }
+            ]
+        },
+
+        {
+            "UpstreamPathTemplate":"/gateaway/Product/{id}",
+            "UpstreamHttpMethod":["GET"],
+            "DownstreamPathTemplate": "/api/Product/{id}",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 5210
+                }
+            ]
+        },
+
+        {
+            "UpstreamPathTemplate":"/gateaway/Product/{id}",
+            "UpstreamHttpMethod":["PUT"],
+            "DownstreamPathTemplate": "/api/Product/{id}",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 5210
+                }
+            ]
+        },
+
+        {
+            "UpstreamPathTemplate":"/gateaway/Product/{id}",
+            "UpstreamHttpMethod":["DELETE"],
+            "DownstreamPathTemplate": "/api/Product/{id}",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 5210
+                }
+            ]
+        }
+
+    ]
+}
